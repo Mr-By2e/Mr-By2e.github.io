@@ -1,0 +1,244 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and size */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Style header */
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+header nav::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+header nav:hover::before {
+    transform: scaleX(0);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+    position: relative;
+}
+
+header nav ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+header nav a::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+}
+
+header nav a:hover::before {
+    opacity: 0.4;
+    transform: translateY(0);
+}
+  
+  /* Style main section */
+  main {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  main p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  
+  main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  main ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  main ul li {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Style footer */
+  footer {
+    background-color: #7f7f7f;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Additional CSS for better appearance */
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  main h1, main h2 {
+    color: #444;
+  }
+  
+  main p {
+    line-height: 1.5;
+  }
+  
+  main ul li {
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin: 1rem auto;
+    }
+  }
+  /* General form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  form input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Styles for specific form elements */
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  form input[type="text"]::placeholder,
+  form input[type="email"]::placeholder,
+  form textarea::placeholder {
+    color: #999;
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Styles for form validation */
+  form input.error,
+  form textarea.error {
+    border-color: #f00;
+  }
+  
+  form input.error:focus,
+  form textarea.error:focus {
+    box-shadow: none;
+  }
+  
+  form .error-message {
+    color: #f00;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  @media (max-width: 768px) {
+    main {
+      margin: 1rem auto;
+    }
+  }

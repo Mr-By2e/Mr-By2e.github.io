@@ -1,0 +1,59 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    block-size: border-box;
+}
+
+.caorusel_container
+{
+    width: 35%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+
+}
+
+.caorusel_container img
+{
+    display: block;
+    width: 100%;
+}
+.caorusel_slide
+{
+    display: flex;
+    height: 35vw;
+
+}
+.transformAnimation
+{
+    transition: .4s all ease-in-out;
+}
+
+/* CSS styles for the buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 4vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* CSS styles for the Prev button */
+button.prev {
+    background-color: #007BFF;
+    margin-left: 45%;
+}
+
+/* CSS styles for the Next button */
+button.next {
+    background-color: #FFC107;
+}

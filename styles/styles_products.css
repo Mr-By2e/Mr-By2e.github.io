@@ -1,0 +1,97 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and size */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+main h1
+{
+  text-align: center;
+}
+/* Style header */
+header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+header nav::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+header nav:hover::before {
+  transform: scaleX(0);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 1rem;
+  position: relative;
+}
+
+header nav ul li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+header nav ul li:hover::after {
+  transform: scaleX(1);
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+header nav a::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: all 0.3s ease;
+}
+
+header nav a:hover::before {
+  opacity: 0.4;
+  transform: translateY(0);
+}
+
+  
+footer {
+  border-top: 1px solid #ccc;
+  background-color: #7f7f7f;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
