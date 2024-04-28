@@ -1,0 +1,196 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define CSS variables */
+  :root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --color-text: #333;
+    --color-bg: #f8f9fa;
+    --padding: 1rem;
+  }
+  
+  /* Set font family and size */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Style header */
+  header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  header nav:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  header nav:hover:before {
+    transform: scaleX(0);
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  header nav ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  header nav ul li:hover::after {
+    transform: scaleX(1);
+  }
+  
+  header nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+  
+  header nav a::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+  }
+  
+  header nav a:hover::before {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  section {
+    text-align: center;
+  }
+  #why-choose-us
+  {
+    padding-top: 2vw;
+  }
+  /* Style main section */
+  main {
+    padding: var(--padding);
+  }
+  
+  main h1, main h2 {
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  main p {
+    margin-bottom: 1.5rem;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+  }
+  
+  main ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  main ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  main form {
+    margin-top: 2rem;
+  }
+  
+  main label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  main input, main textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  form input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  main input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Style footer */
+  footer {
+    background-color: #7f7f7f;
+    color: #000000;
+    ;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer p {
+    margin-top: 0.5rem;
+  }
+  
+  /* Additional CSS for better appearance */
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    flex-basis: 25vw;
+    margin-bottom: 5px;
+    margin-left: 5vw;
+    text-decoration: none;
+  }
+  
+  .thumbnail {
+    width: 25vw;
+    height: auto;
+  }
+  .caption {
+    color: #333;
+    text-decoration-line: none;
+    margin-top: -1vw;
+  }
