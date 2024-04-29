@@ -197,7 +197,7 @@
 /*... (rest of the CSS code remains the same) */
 
 /* Mobile-specific styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1220px) {
   body {
     font-size: 14px;
     line-height: 1.2;
