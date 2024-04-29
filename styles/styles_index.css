@@ -194,3 +194,48 @@
     text-decoration-line: none;
     margin-top: -1vw;
   }
+/*... (rest of the CSS code remains the same) */
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  #gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ .gallery-item {
+    flex-basis: 50vw;
+    margin-bottom: 2rem;
+    margin-left: 2vw;
+  }
+}
