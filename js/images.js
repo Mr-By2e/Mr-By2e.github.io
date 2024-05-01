@@ -1,5 +1,4 @@
 
-
 // Fetch the JSON data
 fetch('js\\images.json')
   .then(response => response.json())
