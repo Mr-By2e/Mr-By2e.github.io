@@ -1,11 +1,10 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  /* Define CSS variables */
+
   :root {
     --font-family: 'Roboto', sans-serif;
     --font-size: 16px;
@@ -15,7 +14,7 @@
     --padding: 1rem;
   }
   
-  /* Set font family and size */
+  
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -34,7 +33,7 @@
 
   
   
-  /* Style header */
+
   header {
     background-color: #a5a5a5;
     padding: 1rem;
@@ -113,7 +112,7 @@
   {
     padding-top: 2vw;
   }
-  /* Style main section */
+ 
   main {
     padding: var(--padding);
   }
@@ -175,7 +174,7 @@
     background-color: #555;
   }
   
-  /* Style footer */
+ 
   footer {
     background-color: #7f7f7f;
     color: #000000;
@@ -189,7 +188,7 @@
     margin-top: 0.5rem;
   }
   
-  /* Additional CSS for better appearance */
+ 
   #gallery {
     display: flex;
     flex-wrap: wrap;
@@ -212,9 +211,6 @@
     margin-top: -1vw;
   }
 
-  /*... (rest of the CSS code remains the same) */
-
-/* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
   body {
     font-size: 14px;

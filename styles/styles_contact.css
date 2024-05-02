@@ -1,11 +1,10 @@
-/* Reset default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Set font family and size */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -13,7 +12,6 @@ body {
     color: #333;
 }
 
-  /* Style header */
   header {
     background-color: #a5a5a5;
     padding: 1rem;
@@ -86,7 +84,7 @@ body {
     transform: translateY(0);
   }
   
-  /* Style main section */
+ 
   main {
     padding: 2rem;
     background-color: #fff;
@@ -124,7 +122,6 @@ body {
     text-align: center;
   }
   
-  /* Style footer */
   footer {
     background-color: #7f7f7f;
     color: #333;
@@ -136,7 +133,7 @@ body {
     width: 100%;
   }
   
-  /* Additional CSS for better appearance */
+  
   body {
     background-color: #f8f9fa;
   }
@@ -161,8 +158,7 @@ body {
     border-top: 1px solid #ccc;
     color: black;
   }
-  
-  /* General form styles */
+
   form {
     display: flex;
     flex-direction: column;
@@ -204,7 +200,7 @@ body {
     background-color: #555;
   }
   
-  /* Styles for specific form elements */
+
   form input[type="text"]:focus,
   form input[type="email"]:focus,
   form textarea:focus {
@@ -223,7 +219,7 @@ body {
     height: 100px;
   }
   
-  /* Styles for form validation */
+ 
   form input.error,
   form textarea.error {
     border-color: #f00;

@@ -1,11 +1,11 @@
-/* Reset default styles */
+
 body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set font family and size */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -17,7 +17,7 @@ main h1
 {
   text-align: center;
 }
-  /* Style header */
+
   header {
     background-color: #a5a5a5;
     padding: 1rem;

@@ -1,10 +1,10 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Define CSS variables */
+
 :root {
   --font-family: 'Roboto', sans-serif;
   --font-size: 16px;
@@ -13,7 +13,7 @@
   --color-bg: #f8f9fa;
   --padding: 1rem;
 }
-/* Set font family and size */
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -21,7 +21,7 @@ body {
     color: #333;
 }
 
-/* Style header */
+
 header {
   background-color: #a5a5a5;
   padding: 1rem;
@@ -93,7 +93,7 @@ header nav a:hover::before {
   opacity: 0.4;
   transform: translateY(0);
 }
-  /* Style main section */
+
   main {
     padding: 2rem;
     background-color: #fff;
@@ -128,7 +128,7 @@ header nav a:hover::before {
     margin-bottom: 0.5rem;
   }
   
-  /* Style footer */
+  
   footer {
   border-top: 1px solid #ccc;
   background-color: #7f7f7f;
@@ -147,7 +147,7 @@ header nav a:hover::before {
   }
   
   
-  /* Additional CSS for better appearance */
+
   body {
     background-color: #f8f9fa;
   }
