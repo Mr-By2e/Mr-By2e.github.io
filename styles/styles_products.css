@@ -101,7 +101,7 @@ footer {
   position: fixed;
   width: 100%;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
   body {
     font-size: 14px;
     line-height: 1.2;
