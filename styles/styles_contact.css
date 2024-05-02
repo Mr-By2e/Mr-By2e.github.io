@@ -13,55 +13,61 @@ body {
     color: #333;
 }
 
-/* Style header */
-header {
-    background-color: #f8f9fa;
+  /* Style header */
+  header {
+    background-color: #a5a5a5;
     padding: 1rem;
-}
-
-header nav::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  header nav:before {
     content: "";
     display: block;
     height: 1px;
     background-color: #ccc;
     transition: transform 0.3s ease;
-}
-
-header nav:hover::before {
+  }
+  
+  header nav:hover:before {
     transform: scaleX(0);
-}
-
-header nav ul {
+  }
+  
+  header nav ul {
     display: flex;
     list-style: none;
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     margin-right: 1rem;
     position: relative;
-}
-
-header nav ul li::after {
+  }
+  
+  header nav ul li::after {
     content: "";
     display: block;
     height: 2px;
     background-color: #333;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-}
-
-header nav ul li:hover::after {
+  }
+  
+  header nav ul li:hover::after {
     transform: scaleX(1);
-}
-
-header nav a {
-    color: #333;
+  }
+  
+  header nav a {
+    color: #150844;
     text-decoration: none;
     padding: 0.5rem 1rem;
     position: relative;
-}
-
-header nav a::before {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  header nav a::before {
     content: "";
     display: block;
     height: 100%;
@@ -73,12 +79,12 @@ header nav a::before {
     opacity: 0;
     transform: translateY(2px);
     transition: all 0.3s ease;
-}
-
-header nav a:hover::before {
+  }
+  
+  header nav a:hover::before {
     opacity: 0.4;
     transform: translateY(0);
-}
+  }
   
   /* Style main section */
   main {
@@ -126,6 +132,7 @@ header nav a:hover::before {
     padding: 1rem;
     position: relative;
     bottom: 0;
+    margin: -10px;
     width: 100%;
   }
   
@@ -155,7 +162,7 @@ header nav a:hover::before {
     color: black;
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     main {
       margin: 1rem auto;
     }
@@ -237,29 +244,8 @@ header nav a:hover::before {
     font-size: 0.875rem;
     margin-top: 0.25rem;
   }
-  @media only screen and (max-width: 1300px) {
-    body {
-      font-size: 14px;
-      line-height: 1.2;
-    }
-  
-    header nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    header nav ul li {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-  
+  @media (max-width: 768px) {
     main {
-      padding: 1rem;
-    }
-  
-    section {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      margin: 1rem auto;
     }
   }
-

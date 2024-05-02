@@ -1,10 +1,18 @@
 /* Reset default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Define CSS variables */
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+  --color-text: #333;
+  --color-bg: #f8f9fa;
+  --padding: 1rem;
+}
 /* Set font family and size */
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,71 +23,76 @@ body {
 
 /* Style header */
 header {
-    background-color: #f8f9fa;
-    padding: 1rem;
+  background-color: #a5a5a5;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
-header nav::before {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #ccc;
-    transition: transform 0.3s ease;
+header nav:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  transition: transform 0.3s ease;
 }
 
-header nav:hover::before {
-    transform: scaleX(0);
+header nav:hover:before {
+  transform: scaleX(0);
 }
 
 header nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 header nav ul li {
-    margin-right: 1rem;
-    position: relative;
+  margin-right: 1rem;
+  position: relative;
 }
 
 header nav ul li::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #333;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 header nav ul li:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 header nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    position: relative;
+  color: #150844;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 header nav a::before {
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    opacity: 0;
-    transform: translateY(2px);
-    transition: all 0.3s ease;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: all 0.3s ease;
 }
 
 header nav a:hover::before {
-    opacity: 0.4;
-    transform: translateY(0);
+  opacity: 0.4;
+  transform: translateY(0);
 }
-
   /* Style main section */
   main {
     padding: 2rem;
@@ -125,6 +138,7 @@ header nav a:hover::before {
   bottom: 0;
   position: fixed;
   width: 100%;
+  margin: -10px;
 }
 
   
@@ -138,7 +152,10 @@ header nav a:hover::before {
     background-color: #f8f9fa;
   }
   
-  @media only screen and (max-width: 900px) {
+  header {
+    border-bottom: 1px
+  }
+  @media only screen and (max-width: 1300px) {
   body {
     font-size: 14px;
     line-height: 1.2;
