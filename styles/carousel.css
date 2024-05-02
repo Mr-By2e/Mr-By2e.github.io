@@ -51,7 +51,6 @@ button {
 /* CSS styles for the Prev button */
 button.prev {
     background-color: #007BFF;
-    margin-left: 45%;
 }
 
 /* CSS styles for the Next button */
